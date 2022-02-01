@@ -5,6 +5,10 @@ public class problem5 {
     }
 
     public static int BinarySearch(int target,int[] inputArray,int lower,int upper){
+        if(inputArray.length==0){
+            System.out.println("The input array is blank");
+            System.exit(0);
+        }
         if(upper>=1) {
             int mid = (upper+lower) / 2;
             if(inputArray[mid]==target){
