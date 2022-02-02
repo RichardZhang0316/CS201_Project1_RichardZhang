@@ -1,7 +1,11 @@
 public class problem5 {
     public static void main(String[] args){
-        int[] input={12,9,6,5,3,1};
-        System.out.println(BinarySearch(1,input,0,5));//Your function should take the array and the number to find as inputs. Only these two?
+        int[] input={15,14,12,9,6,5,3,1};
+        System.out.println(sortArray(input,14));
+    }
+
+    public static int sortArray(int[] inputArray,int target){
+        return BinarySearch(target,inputArray,0,inputArray.length-1);
     }
 
     public static int BinarySearch(int target,int[] inputArray,int lower,int upper){
@@ -9,7 +13,7 @@ public class problem5 {
             System.out.println("The input array is blank");
             System.exit(0);
         }
-        if(upper>=1) {
+        if(upper>=0) {
             int mid = (upper+lower) / 2;
             if(inputArray[mid]==target){
                 return mid;

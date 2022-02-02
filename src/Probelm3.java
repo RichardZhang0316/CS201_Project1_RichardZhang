@@ -26,7 +26,7 @@ public class Probelm3 {
             }
         }
 
-        //insertion sort: this is the part whoes running time wil be calculated by us.
+        //insertion sort: this is the part whose running time wil be calculated by us.
         for(int i=0; i< inputArray.length;i++){
             int key=inputArray[i];
             for(int j=i-1;j>=0;j--){

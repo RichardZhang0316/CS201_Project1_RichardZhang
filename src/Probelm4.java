@@ -11,17 +11,18 @@ public class Probelm4 {
         // Your implementation here.
         int i = 0, j = matrix.length - 1;
 
-        while (i < matrix.length && j >= 0)
-            if(matrix[i][j]==k){
-                found=true;
+        while (i < matrix.length && j >= 0) {
+            if (matrix[i][j] == k) {
+                found = true;
                 return found;
             }
-            else if(matrix[i][j]<k){
+            else if (matrix[i][j] < k) {
                 j--;
             }
-            else{
+            else {
                 //matrix[i][j]>k
                 i++;
+            }
         }
         return found;
     }
